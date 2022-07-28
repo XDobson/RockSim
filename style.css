@@ -6,10 +6,25 @@
     margin: 0%;
     border: 0;
     box-sizing: border-box;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
     background-image: url("hill.png");
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#overlay{
+    min-width: 100vw;
+    min-height: 100vh;
+
+    opacity: 0.0;
+
+    background-image: url("hill_night.png");
     background-position:center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -52,6 +67,19 @@ body {
     transform: translate(-50%,-50%);
     
     visibility:  hidden;
+
+}
+#rockOverlay {
+    width:  17.5vw;
+
+    position:  absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%,-50%);
+    
+    visibility:  hidden;
+
+    filter: hue-rotate(200deg) brightness(5%) saturate(500%);
 }
 
 

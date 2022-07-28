@@ -1,0 +1,76 @@
+/* something here */
+
+/* rock.png dimensions are 805w 614h, then set to 17.5vw*/
+
+* {
+    margin: 0%;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("hill.png");
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#choice {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    width: 95%;
+    height:  50%;
+
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #faebd767;
+    border-radius: 20px;
+}
+
+#choice div img {
+    width:  17.5vw;
+}
+
+#popup{
+    visibility: hidden;
+}
+
+#rock {
+    width:  17.5vw;
+
+    position:  absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%,-50%);
+    
+    visibility:  hidden;
+}
+
+
+/* Media Queries  */
+
+/* Purpose: to make rock big enough on smaller screens */
+@media(max-width:700px){
+    body{
+        background-size: 200% 100%;
+    }
+    #rock{
+        /* bottom: 15%; */
+        width: 30vw;
+    }
+}
+
+@media(max-height:500px){
+    body{
+        background-size: 100% 200%;
+        background-position:bottom;
+    }
+}

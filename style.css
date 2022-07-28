@@ -90,7 +90,14 @@ body {
     body{
         background-size: 200% 100%;
     }
+    #overlay{
+        background-size: 200% 100%;
+    }
     #rock{
+        /* bottom: 15%; */
+        width: 30vw;
+    }
+    #rockOverlay{
         /* bottom: 15%; */
         width: 30vw;
     }
@@ -98,6 +105,10 @@ body {
 
 @media(max-height:500px){
     body{
+        background-size: 100% 200%;
+        background-position:bottom;
+    }
+    #overlay{
         background-size: 100% 200%;
         background-position:bottom;
     }

@@ -2,7 +2,7 @@
 // Make rock do something?
 
 // variables go here
-startOpacity = 0.5
+startOpacity = 0
 window.toggle = 0
 
 // Choose a rock, set rock to chosen rock, and set duplicate rock (for night cycle) also to chosen rock

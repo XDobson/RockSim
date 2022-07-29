@@ -11,7 +11,7 @@
 
 <body>
 
-<section  id="overlay"></section>
+    <section id="overlay"></section>
 
     <section id="choice">
         <h1>Choose your rock.</h1>
@@ -25,10 +25,24 @@
 
     </section>
 
-    <section id="popup">Helpful Text</section>
+    <section id="DLC">
+        <div id="dlcText">
+            <h1> DLC CONTENT: </h1>
+            <h3>Choose a hat!</h3>
+        </div>
+        <div id="cosmetics">
+            <img src="cosmetics/cosmetic1.png"  onclick="chooseCosmetic(1)">
+            <img src="cosmetics/cosmetic2.png"  onclick="chooseCosmetic(2)">
+            <img src="cosmetics/cosmetic3.png"  onclick="chooseCosmetic(3)">
+            <img src="cosmetics/cosmetic4.png"  onclick="chooseCosmetic(4)">
+            <img src="cosmetics/cosmetic5.png"  onclick="chooseCosmetic(5)">
+        </div>
+    </section>
 
-    <img id="rock" src="rocks/rock1.png">
-    <img id="rockOverlay" src="rocks/rock1.png">
+    <img class="rockStuff" id="rock" src="rocks/rock1.png">
+    <img class="rockStuff" id="rockOverlay" src="rocks/rock1.png" onclick="dlcCounter()">
+    <img class="rockStuff" id="cosmetic" src="cosmetics/cosmetic1.png" onclick="dlcCounter()">
+    <img class="rockStuff" id="cosmeticOverlay" src="cosmetics/cosmetic1.png" onclick="dlcCounter()">
 
     <script src="app.js"></script>
 </body>

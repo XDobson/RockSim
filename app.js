@@ -57,3 +57,4 @@ function chooseCosmetic(cosmeticID){
 
     document.getElementById("DLC").style.visibility = "hidden"
 }
+
